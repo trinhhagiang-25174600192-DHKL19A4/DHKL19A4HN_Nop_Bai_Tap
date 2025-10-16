@@ -1,0 +1,117 @@
+# BÀI 1
+# Tạo Project mới trên GitHub có tên theo mẫu: <Mã sinh viên>_<Họ và tên>_bai_tap
+# VD: 25174600201_Nguyen_Duc_Minh_bai_tap
+
+git init
+git remote add origin https://github.com/<username>/25174600201_Nguyen_Duc_Minh_bai_tap.git
+git add README.md
+git commit -m "Khởi tạo project và thêm README.md"
+git push -u origin main
+
+# Clone project về máy cá nhân
+git clone https://github.com/<username>/25174600201_Nguyen_Duc_Minh_bai_tap.git
+
+# BÀI 2
+# Tạo file text trong project trên máy cá nhân và chỉnh sửa nội dung
+
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit..." > text.txt
+
+git add text.txt
+git commit -m "Thêm file text.txt và cập nhật nội dung"
+git push origin main
+
+# BÀI 3
+# Tạo 4 nhánh mới (branch_1 → branch_4) bắt nguồn từ nhánh chính (main)
+
+git checkout -b branch_1
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Tạo file text_branch_1.txt"
+git push origin branch_1
+
+git checkout main
+git checkout -b branch_2
+echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+git add text_branch_2.txt
+git commit -m "Tạo file text_branch_2.txt"
+git push origin branch_2
+
+git checkout main
+git checkout -b branch_3
+echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+git add text_branch_3.txt
+git commit -m "Tạo file text_branch_3.txt"
+git push origin branch_3
+
+git checkout main
+git checkout -b branch_4
+echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+git add text_branch_4.txt
+git commit -m "Tạo file text_branch_4.txt"
+git push origin branch_4
+
+# BÀI 4
+# Xóa nhánh branch_4 trên máy (local) và kiểm tra danh sách
+
+git branch -d branch_4
+git branch --list
+
+# BÀI 5
+# Cập nhật lại project trên máy bằng dữ liệu mới nhất từ GitHub
+
+git pull origin main
+
+# BÀI 6
+# Tạo thư mục main_folder trong nhánh chính chứa các file:
+# main_txt_1.txt, main_txt_2.txt, main_txt_3.txt
+
+mkdir main_folder
+cd main_folder
+echo "File 1 trong main" > main_txt_1.txt
+echo "File 2 trong main" > main_txt_2.txt
+echo "File 3 trong main" > main_txt_3.txt
+cd ..
+
+git add main_folder
+git commit -m "Tạo thư mục main_folder và thêm các file text"
+git push origin main
+
+# BÀI 7
+# Tạo nhánh branch_5 bắt nguồn từ branch_1
+# Chỉnh sửa lại nội dung file text_branch_1.txt
+
+git checkout branch_1
+git checkout -b branch_5
+echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget..." > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Chỉnh sửa nội dung file text_branch_1.txt trong branch_5"
+git push origin branch_5
+
+# Sau đó tạo pull request giữa branch_5 và branch_1, xử lý conflict nếu có
+
+# BÀI 8
+# Pull request các nhánh vào nhánh main, đảm bảo các file sau tồn tại trong main:
+# text_branch_1.txt, text_branch_2.txt, text_branch_3.txt, text_branch_4.txt
+
+git checkout main
+git merge branch_1
+git merge branch_2
+git merge branch_3
+git merge branch_4
+git push origin main
+
+# Xóa nhánh branch_5 sau khi hoàn thành
+git branch -d branch_5
+git push origin --delete branch_5
+
+# BÀI 9
+# Xóa các nhánh branch_2, branch_3, branch_4 trên máy và trên GitHub
+
+git branch -d branch_2
+git branch -d branch_3
+git branch -d branch_4
+git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+git pull origin main
+
