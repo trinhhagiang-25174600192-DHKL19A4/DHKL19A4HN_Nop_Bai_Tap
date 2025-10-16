@@ -1,0 +1,66 @@
+# ----- Bài 1 -----
+git clone <URL_project_cua_ban>
+
+# ----- Bài 2 -----
+cd <ten_project>
+# (Chỉnh sửa file readme.md)
+git add readme.md
+git commit -m "Cap nhat file readme.md"
+git push origin main
+
+# ----- Bài 3 -----
+# (Lặp lại cho branch 1, 2, 3, 4)
+git checkout -b branch_1
+# (Tạo file text_branch_1.txt)
+git add text_branch_1.txt
+git commit -m "Them file cho branch_1"
+git push origin branch_1
+git checkout main
+
+# ----- Bài 4 -----
+git branch --delete branch_4
+git branch --list
+git branch -r
+
+# ----- Bài 5 -----
+git pull
+
+# ----- Bài 6 -----
+git checkout main
+mkdir main_folder
+touch main_folder/main_txt_1.txt main_folder/main_txt_2.txt main_folder/main_txt_3.txt
+git add .
+git commit -m "Them thu muc main_folder"
+git push origin main
+# (Lặp lại cho các nhánh 1, 2, 3)
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+
+# ----- Bài 7 -----
+git checkout branch_1
+git checkout -b branch_5
+# (Chỉnh sửa file text_branch_1.txt)
+git add text_branch_1.txt
+git commit -m "Cap nhat noi dung o branch_5"
+git push origin branch_5
+# (Tạo Pull Request và xử lý conflict trên Github)
+# (Merge PR và xóa branch trên Github)
+git checkout main
+git branch -d branch_5
+
+# ----- Bài 8 -----
+# (Tạo và merge các PR trên Github)
+git checkout main
+git pull origin main
+
+# ----- Bài 9 -----
+git branch -d branch_2
+git branch -d branch_3
+git branch -d branch_4
+git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+git checkout branch_1
+git merge main
+git push origin branch_1
