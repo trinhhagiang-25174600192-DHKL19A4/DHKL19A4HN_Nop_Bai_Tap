@@ -1,0 +1,2 @@
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+This line causes a CONFLICT in branch 1.
