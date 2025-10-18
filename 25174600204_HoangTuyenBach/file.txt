@@ -1,0 +1,161 @@
+    1  git config -
+    2  git config -|
+    3  git config -|
+    4  git config -| git config -|
+    5  git config-|
+    6  mkdir ""Ex1""
+    7  mkdir ""Ex1""
+    8  mkdir ""Ex1""
+    9  mkdir ""Ex1""
+   10  mkdir ""Ex1""
+   11  mkdir ""Ex1""
+   12  git config -|
+   13  git config -|
+   14  git init
+   15  git config -| git config -1
+   16  git config --global user.name "Bach"
+   17  git config --global user.email "htbach.25174600204@sv.edu.vn"
+   18  git config --list
+   19  git config --global user.email "htbach.25174600204@sv.uneti.edu.vn"
+   20  git config --list
+   21  cd
+   22  cd new folder
+   23  cd git 19a4
+   24  mkdir Ex1
+   25  mkdir Ex2
+   26  rm -d "Ex2"
+   27  mkdir Ex2
+   28  diff Ex1 Ex2
+   29  rm -d "Ex2"
+   30  cd
+   31  cd Ex1
+   32  cd
+   33  git branch
+   34  git init
+   35  git branch
+   36  git status
+   37  got branch main
+   38  git branch main
+   39  git branch
+   40  git clone https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+   41  cd HOANGTUYENBACH_25174600204_DHKL19A4
+   42  1s
+   43  notepad README.md
+   44  git add README.md
+   45  git commit -m "Update README.md"
+   46  git push origin main
+   47  cat README.md
+   48  git HOANGTUYENBACH_25174600204_DHKL19A4
+   49  cd HOANGTUYENBACH_25174600204_DHKL19A4
+   50  pwd
+   51  1s
+   52  git branch
+   53  git checkout -b branch_1
+   54  echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+   55  git add text_branch_1.txt
+   56  git commit -m "Add text_branch_1.txt"
+   57  git push origin branch_1
+   58  git checkout main
+   59  git checkout -b branch_2
+   60  echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+   61  git add text_branch_2.txt
+   62  git commit -m "Add text_branch_2.txt"
+   63  git push origin branch_2
+   64  checkout main
+   65  git checkout main
+   66  git checkout -b branch_3
+   67  echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." text_branch_3.txt
+   68  git add text_branch_3.txt
+   69  git commit -m "Add text_branch_3.txt"
+   70  git commit -m "Add text_branch_3.txt"
+   71  echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+   72  git add text_branch_3.txt
+   73  git commit -m "Add text_branch_3.txt"
+   74  git push origin branch_3
+   75  git checkout main
+   76  git checkout -b branch_4
+   77  echo "Học phần: Tin cơ sở cho ngành KHDL
+
+Giảng viên: Lê Hằng Anh
+
+Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+   78  git add text_branch_4.txt
+   79  git commit -m "Add text_branch_4.txt"
+   80  git push origin branch_4
+   81  git checkout main
+   82  git branch -d branch_4
+   83  git branch -D branch_4
+   84  git branch
+   85  git branch -r
+   86  cd [200~cd /c/Users/LENOVO/Documents/HOANGTUYENBACH_25174600204_DHKL19A4
+   87  cd /c/Users/LENOVO/Documents/HOANGTUYENBACH_25174600204_DHKL19A4
+   88  git branch
+   89  git pull
+   90  git checkout main
+   91  mkdir main_folder
+   92  echo "Toi la Bach" > main_folder/main_txt_1.txt
+   93  echo "Bach la toi" > main_folder/main_txt.txt
+   94   echo "Bach la toi" > main_folder/main_txt_2.txt
+   95  echo "Mot cong mot bang ba" > main_folder/main_txt_3.txt
+   96  git add main_folder/
+   97  git commit -m "Add main_folder with 3 text files"
+   98  git push orgin main
+   99  git push origin main
+  100  git checkout branch_1
+  101  git pull
+  102  git branch --set-upstream-to=origin/branch_1 branch_1
+  103  git pull
+  104  git checkout branch_2
+  105  git pull
+  106  git pull origin branch_2
+  107  git checkout branch_3
+  108  git pull origin branch_3
+  109  git checkout branch_1
+  110  git checkout -b branch_5
+  111  git add text_branch_1.txt
+  112  git commit -m "Update text_branch_1.txt on branch_5"
+  113  git push origin branch_5
+  114  git branch -d branch_5
+  115  git branch -D branch_5
+  116  git push origin --delete branch_5
+  117  git branch
+  118  git branch -r
+  119  git checkout main
+  120  git branch -d branch_5
+  121  git branch --merged
+  122  git checkout branch_1
+  123  git merge branch_5
+  124  git checkout branch_1
+  125  git push origin branch_1
+  126  git merge branch_5
+  127  git push origin branch_1
+  128  git merge branch_5
+  129  git branch -d branch_5
+  130  git branch --merged
+  131  git branch
+  132  git branch -r
+  133  git checkout branch_1
+  134  git push origin branch_1
+  135  git checkout main
+  136  1s
+  137  git checkout main
+  138  git pull origin main
+  139  git checkout main
+  140  git pull origin main
+  141  text_branch_1.txt
+  142  1s
+  143  ls
+  144  $ ls
+  145  README.md     text_branch_1.txt  text_branch_3.txt
+  146  main_folder/  text_branch_2.txt  text_branch_4.txt
+  147  git branch -d branch_2
+  148  git branch -d branch_3
+  149  git branch -d branch_4
+  150  git push origin --delete branch_4
+  151  git checkout branch_1
+  152  git pull origin main
+  153  git push orgin branch_1
+  154  git push origin branch_1
+  155  touch Hoang_Tuyen_Bach_doan_ma.txt
+  156  notepad Hoang_Tuyen_Bach_doan_ma.txt
+  157  history > file.txt 
