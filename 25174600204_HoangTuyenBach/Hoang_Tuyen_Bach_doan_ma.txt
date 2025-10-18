@@ -1,0 +1,703 @@
+LENOVO@Hoangbach MINGW64 ~/Documents
+$ git clone https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+Cloning into 'HOANGTUYENBACH_25174600204_DHKL19A4'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+LENOVO@Hoangbach MINGW64 ~/Documents
+$ cd HOANGTUYENBACH_25174600204_DHKL19A4
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ 1s
+bash: 1s: command not found
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ notepad README.md
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git add README.md
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git commit -m "Update README.md"
+[main cc64b4f] Update README.md
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 643 bytes | 643.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+   91902ab..cc64b4f  main -> main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ cat README.md
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at
+
+# lacinia suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel
+
+# placerat risus. Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra
+
+# viverra sagittis. Vestibulum risus ante, molestie ac eros efficitur, bibendum tincidunt
+
+# turpis. In sit amet tortor gravida, ultricies ante vitae, varius tortor. Aliquam finibus
+
+# porta nulla sed gravida. Aliquam ultricies dapibus ante eget molestie. In hac habitasse
+
+# platea dictumst. Aliquam aliquam enim at massa pharetra, et vestibulum sapien
+
+# consequat. Donec accumsan quis metus at pellentesque. Morbi quis felis placerat,
+
+# interdum justo a, aliquam risus.
+
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git HOANGTUYENBACH_25174600204_DHKL19A4
+git: 'HOANGTUYENBACH_25174600204_DHKL19A4' is not a git command. See 'git --help'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ cd HOANGTUYENBACH_25174600204_DHKL19A4
+bash: cd: HOANGTUYENBACH_25174600204_DHKL19A4: No such file or directory
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ pwd
+/c/Users/LENOVO/Documents/HOANGTUYENBACH_25174600204_DHKL19A4
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ 1s
+bash: 1s: command not found
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch
+* main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout -b branch_1
+Switched to a new branch 'branch_1'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git commit -m "Add text_branch_1.txt"
+[branch_1 6b1747f] Add text_branch_1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 178.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_1' on GitHub by visiting:
+remote:      https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4/pull/new/branch_1
+remote:
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ * [new branch]      branch_1 -> branch_1
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ git add text_branch_2.txt
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ git commit -m "Add text_branch_2.txt"
+[branch_2 d620e19] Add text_branch_2.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4/pull/new/branch_2
+remote:
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ * [new branch]      branch_2 -> branch_2
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ checkout main
+bash: checkout: command not found
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." text_branch_3.txt
+Integer sit amet nisi aliquam, tempor libero quis, cursus erat. text_branch_3.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git add text_branch_3.txt
+fatal: pathspec 'text_branch_3.txt' did not match any files
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git commit -m "Add text_branch_3.txt"
+On branch branch_3
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .Rhistory
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git commit -m "Add text_branch_3.txt"
+On branch branch_3
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .Rhistory
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git add text_branch_3.txt
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git commit -m "Add text_branch_3.txt"
+[branch_3 ac53830] Add text_branch_3.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4/pull/new/branch_3
+remote:
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ * [new branch]      branch_3 -> branch_3
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_4)
+$ echo "Học phần: Tin cơ sở cho ngành KHDL
+
+Giảng viên: Lê Hằng Anh
+
+Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_4)
+$ git add text_branch_4.txt
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_4)
+$ git commit -m "Add text_branch_4.txt"
+[branch_4 6238b4e] Add text_branch_4.txt
+ 1 file changed, 5 insertions(+)
+ create mode 100644 text_branch_4.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 418 bytes | 418.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4/pull/new/branch_4
+remote:
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ * [new branch]      branch_4 -> branch_4
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch -d branch_4
+error: the branch 'branch_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_4'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 6238b4e).
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch
+  branch_1
+  branch_2
+  branch_3
+* main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch_1
+  origin/branch_2
+  origin/branch_3
+  origin/branch_4
+  origin/main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ cd ^[[200~cd /c/Users/LENOVO/Documents/HOANGTUYENBACH_25174600204_DHKL19A4
+bash: cd: too many arguments
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ cd /c/Users/LENOVO/Documents/HOANGTUYENBACH_25174600204_DHKL19A4
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch
+  branch_1
+  branch_2
+  branch_3
+* main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git pull
+Already up to date.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ mkdir main_folder
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ echo "Toi la Bach" > main_folder/main_txt_1.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ echo "Bach la toi" > main_folder/main_txt.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$  echo "Bach la toi" > main_folder/main_txt_2.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ echo "Mot cong mot bang ba" > main_folder/main_txt_3.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git add main_folder/
+warning: in the working copy of 'main_folder/main_txt_1.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_2.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git commit -m "Add main_folder with 3 text files"
+[main 3ff3378] Add main_folder with 3 text files
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git push orgin main
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 469 bytes | 469.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+   cc64b4f..3ff3378  main -> main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> branch_1
+
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git branch --set-upstream-to=origin/branch_1 branch_1
+branch 'branch_1' set up to track 'origin/branch_1'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git pull
+Already up to date.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git checkout branch_2
+Switched to branch 'branch_2'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> branch_2
+
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ git pull origin branch_2
+From https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ * branch            branch_2   -> FETCH_HEAD
+Already up to date.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_2)
+$ git checkout branch_3
+Switched to branch 'branch_3'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git pull origin branch_3
+From https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ * branch            branch_3   -> FETCH_HEAD
+Already up to date.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_3)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+Your branch is up to date with 'origin/branch_1'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git add text_branch_1.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git commit -m "Update text_branch_1.txt on branch_5"
+[branch_5 27ae73b] Update text_branch_1.txt on branch_5
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git push origin branch_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 692 bytes | 692.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4/pull/new/branch_5
+remote:
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ * [new branch]      branch_5 -> branch_5
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git branch -d branch_5
+error: cannot delete branch 'branch_5' used by worktree at 'C:/Users/LENOVO/Documents/HOANGTUYENBACH_25174600204_DHKL19A4'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git branch -D branch_5
+error: cannot delete branch 'branch_5' used by worktree at 'C:/Users/LENOVO/Documents/HOANGTUYENBACH_25174600204_DHKL19A4'
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git push origin --delete branch_5
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ - [deleted]         branch_5
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git branch
+  branch_1
+  branch_2
+  branch_3
+* branch_5
+  main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch_1
+  origin/branch_2
+  origin/branch_3
+  origin/branch_4
+  origin/main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch -d branch_5
+error: the branch 'branch_5' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_5'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch --merged
+* main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout branch_1
+git merge branch_5
+Switched to branch 'branch_1'
+Your branch is up to date with 'origin/branch_1'.
+Updating 6b1747f..27ae73b
+Fast-forward
+ text_branch_1.txt | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git checkout branch_1
+Already on 'branch_1'
+Your branch is ahead of 'origin/branch_1' by 1 commit.
+  (use "git push" to publish your local commits)
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git push origin branch_1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 692 bytes | 692.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_251740204_DHKL19A4
+   6b1747f..27ae73b  branch_1 -> branch_1
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git merge branch_5
+Already up to date.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git push origin branch_1
+Everything up-to-date
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git merge branch_5
+Already up to date.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git branch -d branch_5
+Deleted branch branch_5 (was 27ae73b).
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git branch --merged
+* branch_1
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git branch
+* branch_1
+  branch_2
+  branch_3
+  main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch_1
+  origin/branch_2
+  origin/branch_3
+  origin/branch_4
+  origin/main
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git checkout branch_1
+Already on 'branch_1'
+Your branch is up to date with 'origin/branch_1'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git push origin branch_1
+Everything up-to-date
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ 1s
+bash: 1s: command not found
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (2/2), 1.03 KiB | 263.00 KiB/s, done.
+From https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_251600204_DHKL19A4
+ * branch            main       -> FETCH_HEAD
+   3ff3378..9396b52  main       -> origin/main
+Updating 3ff3378..9396b52
+Fast-forward
+ text_branch_1.txt | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 text_branch_1.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git pull origin main
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 2.93 KiB | 249.00 KiB/s, done.
+From https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_251600204_DHKL19A4
+ * branch            main       -> FETCH_HEAD
+   9396b52..8cc684f  main       -> origin/main
+Updating 9396b52..8cc684f
+Fast-forward
+ text_branch_2.txt | 1 +
+ text_branch_3.txt | 1 +
+ text_branch_4.txt | 5 +++++
+ 3 files changed, 7 insertions(+)
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ text_branch_1.txt
+bash: text_branch_1.txt: command not found
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ 1s
+bash: 1s: command not found
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ ls
+README.md     text_branch_1.txt  text_branch_3.txt
+main_folder/  text_branch_2.txt  text_branch_4.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ $ ls
+README.md     text_branch_1.txt  text_branch_3.txt
+main_folder/  text_branch_2.txt  text_branch_4.txt
+
+bash: $: command not found
+bash: README.md: command not found
+bash: main_folder/: Is a directory
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch -d branch_2
+Deleted branch branch_2 (was d620e19).
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch -d branch_3
+Deleted branch branch_3 (was ac53830).
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git branch -d branch_4
+error: branch 'branch_4' not found
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git push origin --delete branch_4
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ - [deleted]         branch_4
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+Your branch is up to date with 'origin/branch_1'.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git pull origin main
+From https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+ * branch            main       -> FETCH_HEAD
+Updating 27ae73b..8cc684f
+Fast-forward
+ main_folder/main_txt_1.txt | 1 +
+ main_folder/main_txt_2.txt | 1 +
+ main_folder/main_txt_3.txt | 1 +
+ text_branch_2.txt          | 1 +
+ text_branch_3.txt          | 1 +
+ text_branch_4.txt          | 5 +++++
+ 6 files changed, 10 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git push orgin branch_1
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ git push origin branch_1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/HoangTuyenBach-25174600204-DHKL19A4HN/HOANGTUYENBACH_25174600204_DHKL19A4
+   27ae73b..8cc684f  branch_1 -> branch_1
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ touch Hoang_Tuyen_Bach_doan_ma.txt
+
+LENOVO@Hoangbach MINGW64 ~/Documents/HOANGTUYENBACH_25174600204_DHKL19A4 (branch_1)
+$ notepad Hoang_Tuyen_Bach_doan_ma.txt
