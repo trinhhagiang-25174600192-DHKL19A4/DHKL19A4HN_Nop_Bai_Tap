@@ -1,0 +1,428 @@
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git checkout -b "branch_1"
+fatal: a branch named 'branch_1' already exists
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git branch -l
+  branch_1
+* main
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_1)
+$ git add .
+warning: in the working copy of 'text_branch_1', LF will be replaced by CRLF the next time Git touches it
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_1)
+$ git commit -m"Tao nhanh 1 thanh cong"
+[branch_1 9062c9d] Tao nhanh 1 thanh cong
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_1)
+$ git push origin main
+Everything up-to-date
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_1)
+$ git push origin branch_1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 332 bytes | 332.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+   fd1745c..9062c9d  branch_1 -> branch_1
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git checkout -b"branch_2"
+Switched to a new branch 'branch_2'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_2)
+$ git branch -l
+  branch_1
+* branch_2
+  main
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_2)
+$ git add .
+warning: in the working copy of 'text_branch_2', LF will be replaced by CRLF the next time Git touches it
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_2)
+$ git commit -m"Tao nhanh 2 thanh cong"
+[branch_2 125fa48] Tao nhanh 2 thanh cong
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 380 bytes | 190.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap/pull/new/branch_2
+remote:
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+ * [new branch]      branch_2 -> branch_2
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git checkout -b"branch_3"
+Switched to a new branch 'branch_3'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_3)
+$ git branch -l
+  branch_1
+  branch_2
+* branch_3
+  main
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_3)
+$ git add .
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_3)
+$ git commit -m
+error: switch `m' requires a value
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_3)
+$ git commit -m "Tao nhanh 3 thanh cong"
+[branch_3 5624812] Tao nhanh 3 thanh cong
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 395 bytes | 197.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap/pull/new/branch_3
+remote:
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+ * [new branch]      branch_3 -> branch_3
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git checkout -b "branch_3"
+fatal: a branch named 'branch_3' already exists
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git checkout -b "branch_4"
+Switched to a new branch 'branch_4'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_4)
+$ git add .
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_4)
+$ git commit -m "Tao nhanh 4 thanh cong"
+[branch_4 7f0b112] Tao nhanh 4 thanh cong
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 385 bytes | 192.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap/pull/new/branch_4
+remote:
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+ * [new branch]      branch_4 -> branch_4
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git branch -D
+fatal: branch name required
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 7f0b112).
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git branch -l
+  branch_1
+  branch_2
+  branch_3
+* main
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ git pull
+Already up to date.
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ mkdir main_folder
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap (main)
+$ cd main_folder
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ touch "main_txt_1.txt"
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ touch "main_txt_2.txt"
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ touch "main_txt_3.txt"
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git add .
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git commit -m
+error: switch `m' requires a value
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git commit -m "Tao main folder thanh cong"
+[main f5baac0] Tao main folder thanh cong
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git push origin main_folder
+error: src refspec main_folder does not match any
+error: failed to push some refs to 'https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git add main_folder
+fatal: pathspec 'main_folder' did not match any files
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 396 bytes | 198.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+   b23baa6..f5baac0  main -> main
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git pull
+Already up to date.
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non
+metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie
+accumsan sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam
+malesuada v el dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor
+tristique turpis. Nam ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti
+sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vitae
+egestas lacus. Phasellus turpis ante, euismod quis pellentesque et, pharetra id ligula.
+Vestibulum mattis sem ac ligula auctor viverra. Phasellus dignissim mollis leo, vitae
+tristique enim." > text_branch_1.txt
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git add branch_1
+fatal: pathspec 'branch_1' did not match any files
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git add branch_5
+fatal: pathspec 'branch_5' did not match any files
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git add .
+warning: in the working copy of 'main_folder/text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git commit -m"Tao nhanh 5 thanh cong"
+[branch_1 33b3314] Tao nhanh 5 thanh cong
+ 1 file changed, 9 insertions(+)
+ create mode 100644 main_folder/text_branch_1.txt
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git push origin
+fatal: The current branch branch_1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin branch_1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git push origin branch_1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 819 bytes | 409.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+   9062c9d..33b3314  branch_1 -> branch_1
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git checkout -b "branch_5'
+>
+>
+> ^C
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git checkout -b "branch_5"
+Switched to a new branch 'branch_5'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git add .
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git commit -m'TAO NHANH 5 "
+>
+> ^C
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git commit -m"tao nhanh 5"
+On branch branch_1
+nothing to commit, working tree clean
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git push origin branch_1
+Everything up-to-date
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_1)
+$ git checkout branch_5
+Switched to branch 'branch_5'
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git add .
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git commit -m"tao nhanh 5"
+On branch branch_5
+nothing to commit, working tree clean
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git push origin branch_5
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap/pull/new/branch_5
+remote:
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+ * [new branch]      branch_5 -> branch_5
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git branch -D branch_2
+Deleted branch branch_2 (was 125fa48).
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git branch -D branch_3
+Deleted branch branch_3 (was 5624812).
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git push origin -delete branch_2
+error: did you mean `--delete` (with two dashes)?
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git push origin --delete branch_2
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+ - [deleted]         branch_2
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git push origin --delete branch_3
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+ - [deleted]         branch_3
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git push origin --delete branch_4
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+ - [deleted]         branch_4
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git branch -D branch_5
+Deleted branch branch_5 (was 33b3314).
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git push origin --delete branch_5
+To https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap.git
+ - [deleted]         branch_5
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$ git pull
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 18 (delta 8), reused 5 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (18/18), 4.70 KiB | 192.00 KiB/s, done.
+From https://github.com/nhhung25174600206-dot/25174600206_Ngo_Huu_Hung_19A4_bai_tap
+   f5baac0..063cbd5  main       -> origin/main
+Updating f5baac0..063cbd5
+Fast-forward
+ main_folder/text_branch_1.txt | 9 +++++++++
+ text_branch_1                 | 1 +
+ text_branch_1.txt             | 1 +
+ text_branch_2                 | 1 +
+ text_branch_3.txt             | 1 +
+ text_branch_4.txt             | 1 +
+ 6 files changed, 14 insertions(+)
+ create mode 100644 main_folder/text_branch_1.txt
+ create mode 100644 text_branch_1
+ create mode 100644 text_branch_1.txt
+ create mode 100644 text_branch_2
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+ADM@LAPTOP-VUFU5JG0 MINGW64 ~/Documents/25174600206_Ngo_Huu_Hung_19A4_bai_tap/main_folder (main)
+$
