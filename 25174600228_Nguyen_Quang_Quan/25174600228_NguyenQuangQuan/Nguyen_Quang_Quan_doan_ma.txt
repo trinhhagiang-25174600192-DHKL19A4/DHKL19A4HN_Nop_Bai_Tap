@@ -1,0 +1,86 @@
+# =========================
+# BÀI 1: TẠO KHO LƯU TRỮ GIT CỤC BỘ (LOCAL REPO)
+# =========================
+git init
+git config --global user.name "Nguyen Quang Quan"
+git config --global user.email "quan00714@gmail.com"
+
+# =========================
+# BÀI 2: KẾT NỐI VỚI REPO TRÊN GITHUB
+# =========================
+git remote add origin https://github.com/quan00714/25174600228_Nguyen_Quang_Quan.git
+git branch -M main
+git push -u origin main
+
+# =========================
+# BÀI 3: TẠO CÁC NHÁNH MỚI
+# =========================
+git branch branch_1
+git branch branch_2
+git branch branch_3
+
+# =========================
+# BÀI 4: CHUYỂN NHÁNH VÀ THÊM FILE
+# =========================
+git checkout branch_1
+echo "Noi dung file text_branch_1.txt" > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Them file text_branch_1.txt"
+git push origin branch_1
+
+git checkout branch_2
+echo "Noi dung file text_branch_2.txt" > text_branch_2.txt
+git add text_branch_2.txt
+git commit -m "Them file text_branch_2.txt"
+git push origin branch_2
+
+git checkout branch_3
+echo "Noi dung file text_branch_3.txt" > text_branch_3.txt
+git add text_branch_3.txt
+git commit -m "Them file text_branch_3.txt"
+git push origin branch_3
+
+# =========================
+# BÀI 5: TẠO PULL REQUEST (YÊU CẦU HỢP NHẤT)
+# =========================
+# Thao tác trên GitHub: vào tab "Pull requests" -> "New pull request"
+# So sánh base: main với compare: branch_1 / branch_2 / branch_3
+
+# =========================
+# BÀI 6: CHỈNH SỬA FILE TRÊN GITHUB
+# =========================
+# Thao tác trực tiếp trên GitHub: chỉnh sửa README.md trong nhánh main
+
+# =========================
+# BÀI 7: CHỈNH SỬA FILE TRÊN NHÁNH branch_1 VÀ PUSH LẠI
+# =========================
+git checkout branch_1
+echo "Noi dung sua doi lan 2" >> text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Chinh sua file text_branch_1.txt lan 2"
+git push origin branch_1
+
+# =========================
+# BÀI 8: TẠO NHÁNH MỚI branch_5 TỪ branch_3
+# =========================
+git checkout branch_3
+git checkout -b branch_5
+git push origin branch_5
+
+# =========================
+# BÀI 9: XÓA NHÁNH KHÔNG CẦN THIẾT
+# =========================
+# Xóa nhánh local
+git branch -d branch_2
+git branch -d branch_3
+git branch -d branch_4
+
+# Xóa nhánh trên GitHub (remote)
+git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+
+# Đồng bộ lại
+git pull
+git push
+
