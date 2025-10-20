@@ -1,0 +1,536 @@
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~
+$ git clone https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+Cloning into '25174600226-Le_Minh_Hang_Nop_Bai-_Tap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~
+$ cd 25174600226-Le_Minh_Hang_Nop_Bai-_Tap
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ ls
+README.md
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ notepad README.md
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git add README.md
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git commit -m "THÊM FILE VÀO README.md"
+[main 4e91438] THÊM FILE VÀO README.md
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 692 bytes | 692.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+   eac5356..4e91438  main -> main
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch
+* main
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch -b branch_1
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch -B branch_1
+error: unknown switch `B'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git checkout -b branch_1
+Switched to a new branch 'branch_1'
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ git commit -m "file text_branch_1.txt vào branch_1"
+[branch_1 0697a16] file text_branch_1.txt vào branch_1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_1' on GitHub by visiting:
+remote:      https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap/pull/new/branch_1
+remote:
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+ * [new branch]      branch_1 -> branch_1
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_2)
+$ git add text_branch_2.txt
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_2)
+$ git commit -m "file text_branch_2.txt vào branch_2"
+[branch_2 4532718] file text_branch_2.txt vào branch_2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap/pull/new/branch_2
+remote:
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+ * [new branch]      branch_2 -> branch_2
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_3)
+$ git add text_branch_3.txt
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_3)
+$ git commit -m "file text_branch_3.txt vào branch_3"
+[branch_3 e2e266e] file text_branch_3.txt vào branch_3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 369 bytes | 369.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap/pull/new/branch_3
+remote:
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+ * [new branch]      branch_3 -> branch_3
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_4)
+$ git add text_branch_4.txt
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_4)
+$ git commit -m "file text_branch_4.txt vào branch_4"
+[branch_4 76ca0c7] file text_branch_4.txt vào branch_4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 359 bytes | 359.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap/pull/new/branch_4
+remote:
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+ * [new branch]      branch_4 -> branch_4
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch -d branch_4
+error: the branch 'branch_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_4'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch --list
+  branch_1
+  branch_2
+  branch_3
+  branch_4
+* main
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 76ca0c7).
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch --list
+  branch_1
+  branch_2
+  branch_3
+
+
+
+From https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ main_folder/main_txt_1.txt | 1 +
+ main_folder/main_txt_2.tx  | 1 +
+ main_folder/main_txt_3.tx  | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.tx
+ create mode 100644 main_folder/main_txt_3.tx
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_3)
+$
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_3)
+$ git checckout branch_1
+git: 'checckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_3)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_5)
+$ notepad text_branch_1.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_5)
+$ git add text_branch_1.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_5)
+$ git commit -m" cập nhật nôiị dung"
+[branch_5 7965d33]  cập nhật nôiị dung
+ 1 file changed, 9 insertions(+)
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_5)
+$ git push origin branch_5
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.03 KiB | 1.03 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap/pull/new/branch_5
+remote:
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+ * [new branch]      branch_5 -> branch_5
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_5)
+$ git checckout main
+git: 'checckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ main branch
+bash: main: command not found
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git pull origin main
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 4.77 KiB | 488.00 KiB/s, done.
+From https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap
+ * branch            main       -> FETCH_HEAD
+   9e679a7..20c6f72  main       -> origin/main
+Updating 9e679a7..20c6f72
+Fast-forward
+ text_branch_1.txt | 10 ++++++++++
+ text_branch_2.txt |  1 +
+ text_branch_3.txt |  1 +
+ text_branch_4.txt |  1 +
+ 4 files changed, 13 insertions(+)
+ create mode 100644 text_branch_1.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ ls
+README.md  main_folder/  text_branch_1.txt  text_branch_2.txt  text_branch_3.txt  text_branch_4.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch -d branch_2
+error: the branch 'branch_2' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_2'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch -D branch_2
+Deleted branch branch_2 (was 4388a2b).
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git push origin --delete branch_2
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+ - [deleted]         branch_2
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$  git branch -D branch_3
+Deleted branch branch_3 (was 5b5cf86).
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$  git push origin --delete branch_3
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+ - [deleted]         branch_3
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$   git branch -D branch_4
+error: branch 'branch_4' not found
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch -D branch_4
+error: branch 'branch_4' not found
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git checkout branch_4
+branch 'branch_4' set up to track 'origin/branch_4'.
+Switched to a new branch 'branch_4'
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 76ca0c7).
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git branch --delete branch_4
+error: branch 'branch_4' not found
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git push origin --delete branch_4
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+ - [deleted]         branch_4
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git fetch --prune
+From https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap
+ - [deleted]         (none)     -> origin/branch_5
+   0697a16..e6aac85  branch_1   -> origin/branch_1
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ git pull origin main
+From https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap
+ * branch            main       -> FETCH_HEAD
+Updating 37cef92..20c6f72
+Fast-forward
+ text_branch_1.txt | 9 +++++++++
+ text_branch_2.txt | 1 +
+ text_branch_3.txt | 1 +
+ text_branch_4.txt | 1 +
+ 4 files changed, 12 insertions(+)
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ git push origin branch_1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/lmhang25174600226-lgtm/25174600226-Le_Minh_Hang_Nop_Bai-_Tap.git
+   e6aac85..20c6f72  branch_1 -> branch_1
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ touch Le_Minh_Hang_doan_ma.txt
+
+ADMIN@LAPTOP-BNEHBKR7 MINGW64 ~/25174600226-Le_Minh_Hang_Nop_Bai-_Tap (main)
+$ notepad Le_Minh_Hang_doan_ma.txt
+
