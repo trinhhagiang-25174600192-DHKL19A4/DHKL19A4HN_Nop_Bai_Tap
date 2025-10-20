@@ -1,0 +1,83 @@
+#BÀI 1:
+git cd Desktop
+git clone https://github.com/Nguyenthikhanhhong25174600219KHDL19A4HN/25174600219_Nguyen_Thi_Khanh_Hong_bai_tap.git
+cd 25174600219_Nguyen_Thi_Khanh_Hong_bai_tap
+
+#BÀI 2:
+git config --global user.name "Nguyen Thi Khanh Hong"
+git config --global user.email "nguyenthikhanhhong06ss@gmail.com"
+git add .
+git commit -m "Add initial content to readme.md as required by assignment"
+git push origin main
+
+#BÀI 3:
+git checkout -b branch_1 main
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Them file text_branch_1.txt"
+git push origin branch_1
+git checkout main
+git checkout -b branch_2 main
+echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+git add text_branch_2.txt
+git commit -m "Them file text_branch_2.txt"
+git push origin branch_2
+git checkout main
+git checkout -b branch_3 main
+echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+git add text_branch_3.txt
+git commit -m "Them file text_branch_3.txt"
+git push origin branch_3
+git checkout main
+git checkout -b branch_4 main
+echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+git add text_branch_4.txt
+git commit -m "Them file text_branch_4.txt"
+git push origin branch_4
+
+# BÀI 4
+git branch -d branch_4
+git branch --list
+git branch -r
+
+# BÀI 5
+git pull origin main
+
+# BÀI 6
+git checkout main
+mkdir main_folder
+cd main_folder
+echo "Noi dung file 1" > main_txt_1.txt
+echo "Noi dung file 2" > main_txt_2.txt
+echo "Noi dung file 3" > main_txt_3.txt
+cd ..
+git add main_folder
+git commit -m "Tao thu muc main_folder va cac file text"
+git push origin main
+git pull origin main
+
+# BÀI 7
+git checkout branch_1
+git checkout -b branch_5
+echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget..." > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Chinh sua file text_branch_1.txt tren branch_5"
+git push origin branch_5
+
+
+# BÀI 8
+git checkout main
+git merge branch_1
+git merge branch_2
+git merge branch_3
+git merge branch_5
+git commit -m "Gop noi dung tat ca cac nhanh vao main"
+git push origin main
+
+# =============================
+# BÀI 9
+git branch -d branch_2
+git branch -d branch_3
+git push origin --delete branch_2
+git push origin --delete branch_3
+git pull origin main
