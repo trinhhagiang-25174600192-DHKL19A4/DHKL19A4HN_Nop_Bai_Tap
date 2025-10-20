@@ -1,0 +1,574 @@
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3
+$ git clone https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_tap.git
+Cloning into '25174600193_Doan_Thi_Quynh_Anh_bai_tap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3
+$ cd 25174600193_Doan_Thi_Quynh_Anh_bai_tap
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at lacinia suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel placerat risus. Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra viverra sagittis. Vestibulum risus ante, molestie ac eros efficitur, bibendum tincidunt turpis. In sit amet tortor gravida, ultricies ante vitae, varius tortor. Aliquam finibus porta nulla sed gravida. Aliquam ultricies dapibus ante eget molestie. In hac habitasse platea dictumst. Aliquam aliquam enim at massa pharetra, et vestibulum sapien consequat. Donec accumsan quis metus at pellentesque. Morbi quis felis placerat,
+interdum justo a, aliquam risus." > README.md
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git add .
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git commit -m"Thay đổi nội dung của README.md"
+[main 4b0b99d] Thay đổi nội dung của README.md
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git push origin
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 664 bytes | 221.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_
+Quynh_Anh_bai_tap.git
+   2c42927..4b0b99d  main -> main
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git checkout -b"branch_1"
+Switched to a new branch 'branch_1'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." >text_branch_1.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git add .
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time G
+it touches it
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git commit -m"tạo nhánh 1 thành công"
+[branch_1 858fae1] tạo nhánh 1 thành công
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 374 bytes | 374.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_1' on GitHub by visiting:
+remote:      https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_
+remote:
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_ta
+ * [new branch]      branch_1 -> branch_1
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$ git check out -b"branch_2"
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$ git checkout -b"branch_2"
+Switched to a new branch 'branch_2'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." >text_branch_2.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$ git add .
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time G
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$  git commit -m"tạo nhánh 2 thành công"
+[branch_2 e3bd9de] tạo nhánh 2 thành công
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_
+remote:
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_ta
+ * [new branch]      branch_2 -> branch_2
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A
+$  git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$  git checkout -b"branch_3"
+Switched to a new branch 'branch_3'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_3)
+$ echo"Integer sit amet nisi aliquam, tempor libero quis, cursus erat." >text_branch_3.txt
+bash: echoInteger sit amet nisi aliquam, tempor libero quis, cursus erat.: command not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_3)
+$  echo"Integer sit amet nisi aliquam, tempor libero quis, cursus erat." >text_branch_3.txt
+bash: echoInteger sit amet nisi aliquam, tempor libero quis, cursus erat.: command not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_3)
+$ git add .
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time G
+ it
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_3)
+$  git commit -m"tạo nhánh 3 thành công"
+[branch_3 d0a8799] tạo nhánh 3 thành công
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_3)
+$  git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 188.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_
+p/pull/new/branch_3
+remote:
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_ta
+ * [new branch]      branch_3 -> branch_3
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ git checkout -b"branch_4"
+Switched to a new branch 'branch_4'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." >text_branch_4.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_4)
+$ git add .
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time G
+ it
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_4)
+$  git commit -m"tạo nhánh 4 thành công"
+[branch_4 a8288c0] tạo nhánh 4 thành công
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_4)
+$  git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 366 bytes | 183.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_
+p/pull/new/branch_4
+remote:
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_ta
+ * [new branch]      branch_4 -> branch_4
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ git branch –delete "branch_4"
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ git branch -D "branch_4"
+Deleted branch branch_4 (was a8288c0).
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ git branch -l
+  branch_1
+  branch_2
+  branch_3
+* main
+  –delete
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ git pull
+Already up to date.
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ mkdir main folder
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ cd main folder
+bash: cd: too many arguments
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ mkdir main_folder
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A (main)
+$ cd main_folder
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_A/main_folder (main)
+$ touch main_txt_1.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap/main_folder (main)
+$ touch main_txt_2.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap/main_folder (main)
+$ touch main_txt_3.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap/main_folder (main)
+$ cd ..
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git add main_folder
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git commit -m"tạo main_folder thành công"
+[main c58b774] tạo main_folder thành công
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 379 bytes | 189.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_b
+ai_tap.git
+   4b0b99d..c58b774  main -> main
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git check out branch_1
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git checkout branch_1
+Deletion of directory 'main_folder' failed. Should I try again? (y/n)
+Sorry, I did not understand your answer. Please type 'y' or 'n'
+Deletion of directory 'main_folder' failed. Should I try again? (y/n)
+Sorry, I did not understand your answer. Please type 'y' or 'n'
+Deletion of directory 'main_folder' failed. Should I try again? (y/n) y
+Deletion of directory 'main_folder' failed. Should I try again? (y/n) n
+Switched to branch 'branch_1'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git status
+On branch branch_1
+nothing to commit, working tree clean
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ 1s
+bash: 1s: command not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ ls
+README.md  folder/  main/  main_folder/  text_branch_1.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ code text_branch_1.txt
+bash: code: command not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ notepad text_branch_1.txt
+
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ git add .
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ git commit -m"tạo nhánh 5 thành công"
+[branch_5 0bceed4] tạo nhánh 5 thành công
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ push origin branch_5
+bash: push: command not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ git push origin branch_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 702 bytes | 351.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_
+Anh_bai_tap/pull/new/branch_5
+remote:
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_ta
+p.git
+ * [new branch]      branch_5 -> branch_5
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_5)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git pull origin branch_1
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 947 bytes | 236.00 KiB/s, done.
+From https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_
+tap
+ * branch            branch_1   -> FETCH_HEAD
+   858fae1..fc37aac  branch_1   -> origin/branch_1
+Updating 858fae1..fc37aac
+Fast-forward
+ text_branch_1.txt | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git branch -D branch_5
+Deleted branch branch_5 (was 0bceed4).
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git branch
+* branch_1
+  branch_2
+  branch_3
+  main
+  –delete
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git pull origin main
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 3.88 KiB | 59.00 KiB/s, done.
+From https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_
+tap
+ * branch            main       -> FETCH_HEAD
+   c58b774..3947a5a  main       -> origin/main
+Updating c58b774..3947a5a
+Fast-forward
+ text_branch_1.txt | 9 +++++++++
+ text_branch_2.txt | 1 +
+ text_branch_3.txt | 1 +
+ text_branch_4.txt | 1 +
+ 4 files changed, 12 insertions(+)
+ create mode 100644 text_branch_1.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ ls
+README.md  main/         text_branch_1.txt  text_branch_3.txt
+folder/    main_folder/  text_branch_2.txt  text_branch_4.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git branch -d branch_2
+Deleted branch branch_2 (was e3bd9de).
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git branch -d branch_2
+error: branch 'branch_2' not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git branch -d branch_3
+Deleted branch branch_3 (was d0a8799).
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git branch -d branch_4
+error: branch 'branch_4' not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git branch
+  branch_1
+* main
+  –delete
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git push origin --delete branch_2
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_ta
+p.git
+ - [deleted]         branch_2
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git push origin --delete branch_2
+error: unable to delete 'branch_2': remote ref does not exist
+error: failed to push some refs to 'https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/2517
+4600193_Doan_Thi_Quynh_Anh_bai_tap.git'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git push origin --delete branch_3
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_ta
+p.git
+ - [deleted]         branch_3
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git push origin --delete branch_4
+To https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_ta
+p.git
+ - [deleted]         branch_4
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ git checkout branch_1
+Deletion of directory 'main_folder' failed. Should I try again? (y/n) n
+Switched to branch 'branch_1'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git restore .
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git clean -fd
+Deletion of directory 'folder/' failed. Should I try again? (y/n) n
+warning: failed to remove folder/: Permission denied
+Deletion of directory 'main/' failed. Should I try again? (y/n) n
+warning: failed to remove main/: Permission denied
+Deletion of directory 'main_folder/' failed. Should I try again? (y/n) ';bg
+Sorry, I did not understand your answer. Please type 'y' or 'n'
+Deletion of directory 'main_folder/' failed. Should I try again? (y/n) n
+warning: failed to remove main_folder/: Permission denied
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git restore
+fatal: you must specify path(s) to restore
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git restore .
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git clean -ffd
+Deletion of directory 'folder/' failed. Should I try again? (y/n) n
+warning: failed to remove folder/: Permission denied
+Deletion of directory 'main/' failed. Should I try again? (y/n) n
+warning: failed to remove main/: Permission denied
+Deletion of directory 'main_folder/' failed. Should I try again? (y/n) n
+warning: failed to remove main_folder/: Permission denied
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git checkout branch_1
+Already on 'branch_1'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git clean -ffd
+Deletion of directory 'folder/' failed. Should I try again? (y/n) n
+warning: failed to remove folder/: Permission denied
+Deletion of directory 'main/' failed. Should I try again? (y/n) n
+warning: failed to remove main/: Permission denied
+Deletion of directory 'main_folder/' failed. Should I try again? (y/n) n
+warning: failed to remove main_folder/: Permission denied
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git clean -ffd
+Deletion of directory 'folder/' failed. Should I try again? (y/n) n
+warning: failed to remove folder/: Permission denied
+Deletion of directory 'main/' failed. Should I try again? (y/n) n
+warning: failed to remove main/: Permission denied
+Deletion of directory 'main_folder/' failed. Should I try again? (y/n) n
+warning: failed to remove main_folder/: Permission denied
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git pull origin main
+From https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/25174600193_Doan_Thi_Quynh_Anh_bai_
+tap
+ * branch            main       -> FETCH_HEAD
+Updating fc37aac..3947a5a
+Fast-forward
+ main_folder/main_txt_1.txt | 0
+ main_folder/main_txt_2.txt | 0
+ main_folder/main_txt_3.txt | 0
+ text_branch_2.txt          | 1 +
+ text_branch_3.txt          | 1 +
+ text_branch_4.txt          | 1 +
+ 6 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git branch -d branch_2
+error: branch 'branch_2' not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git push origin --delete branch_2
+error: unable to delete 'branch_2': remote ref does not exist
+error: failed to push some refs to 'https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/2517
+4600193_Doan_Thi_Quynh_Anh_bai_tap.git'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git push origin --delete branch_3
+error: unable to delete 'branch_3': remote ref does not exist
+error: failed to push some refs to 'https://github.com/DoanThiQuynhAnh25174600193DHKL19A4HN/2517
+4600193_Doan_Thi_Quynh_Anh_bai_tap.git'
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git branch -a
+* branch_1
+  main
+  –delete
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/branch_1
+  remotes/origin/branch_5
+  remotes/origin/main
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ touch Doan_Thi_Quynh_Anh_doan_ma.txt
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ code Doan_Thi_Quynh_Anh_doan_ma.txt
+bash: code: command not found
+
+doann@DESKTOP-KSHESPQ MINGW64 ~/OneDrive/Documents/BÀI TẬP CHƯƠNG 3/25174600193_Doan_Thi_Quynh_Anh_bai_tap (main)
+$ notepad Doan_Thi_Quynh_Anh_doan_ma.txt
+
