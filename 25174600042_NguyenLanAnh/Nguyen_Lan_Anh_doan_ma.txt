@@ -1,0 +1,445 @@
+Tổng hợp lệnh từ bài 1 đến bài 9
+nguye@LAPTOP-SN0FTR1J MINGW64 ~
+$ git clone https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/Nguye25174600042_DHKL19A4HN.git
+Cloning into 'NguyenLanAnh_25174600042_DHKL19A4HN'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~
+$ cd NguyenLanAnh_25174600042_DHKL19A4HN
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (mai
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integerur, eros at
+lacinia suscipit, magna turpis aliquam est, sit amet aliquam quam liberoUt vel
+placerat risus. Sed tempor in ex vitae sodales. Donec et tempor orci. Ina
+viverra sagittis. Vestibulum risus ante, molestie ac eros efficitur, bibncidunt
+turpis. In sit amet tortor gravida, ultricies ante vitae, varius tortor. finibus
+porta nulla sed gravida. Aliquam ultricies dapibus ante eget molestie. Ibitasse
+platea dictumst. Aliquam aliquam enim at massa pharetra, et vestibulum s
+consequat. Donec accumsan quis metus at pellentesque. Morbi quis felis p
+interdum justo a, aliquam risus."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficit at
+lacinia suscipit, magna turpis aliquam est, sit amet aliquam quam liberoUt vel
+placerat risus. Sed tempor in ex vitae sodales. Donec et tempor orci. Ina
+viverra sagittis. Vestibulum risus ante, molestie ac eros efficitur, bibncidunt
+turpis. In sit amet tortor gravida, ultricies ante vitae, varius tortor. finibus
+porta nulla sed gravida. Aliquam ultricies dapibus ante eget molestie. Ibitasse
+platea dictumst. Aliquam aliquam enim at massa pharetra, et vestibulum s
+consequat. Donec accumsan quis metus at pellentesque. Morbi quis felis p
+interdum justo a, aliquam risus.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git add .
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git commit -m "Chỉnh sửa README.md lần đầu"
+[main 3e4b7f8] Chỉnh sửa README.md lần đầu
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .Rhistory
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (mai
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 334 bytes | 334.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_242_DHKL19A4HN.git
+   82e8379..3e4b7f8  main -> main
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (bra
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (mai
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_2)
+$ git add text_branch_2.txt
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_2)
+$ git commit -m "Thên file text_branch_2.txt"
+[branch_2 3c3d2e1] Thên file text_branch_2.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 404 bytes | 404.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN/pull/new/branch_2
+remote:
+To https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN.git
+ * [new branch]      branch_2 -> branch_2
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_3)
+$ git add text_branch_3.txt
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_3)
+$ git commit -m "Thêm file text_branch_3.txt"
+[branch_3 b27d162] Thêm file text_branch_3.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 415 bytes | 415.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN/pull/new/branch_3
+remote:
+To https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN.git
+ * [new branch]      branch_3 -> branch_3
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_4)
+$ git add text_branch_4.txt
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_4)
+$ git commit -m "Thêm file text_branch_4.txt"
+[branch_4 2ea484b] Thêm file text_branch_4.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_4)
+$ git push origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 405 bytes | 405.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN/pull/new/branch_4
+remote:
+To https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN.git
+ * [new branch]      branch_4 -> branch_4
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git branch --delete branch_4
+error: the branch 'branch_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_4'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 2ea484b).
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git branch --list
+  branch_1
+  branch_2
+  branch_3
+* main
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch_1
+  origin/branch_2
+  origin/branch_3
+  origin/branch_4
+  origin/main
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git pull
+Already up to date.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ mkdir main_folder
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ echo "Nội dung của main_txt_1.txt" > main_folder/main_txt_1.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ echo "Nội dung của main_txt_2.txt" > main_folder/main_txt_2.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ echo "Nội dung của main_txt_3.txt" > main_folder/main_txt_3.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git add main_folder
+warning: in the working copy of 'main_folder/main_txt_1.txt', LF will be replace
+d by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_2.txt', LF will be replace
+d by CRLF the next time Git touches it
+warning: in the working copy of 'main_folder/main_txt_3.txt', LF will be replace
+d by CRLF the next time Git touches it
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git commit -m "Thêm thư mục main_folder và 3 file txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ADMIN@DESKTOP-AR47RD9.(none)')
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (main)
+$ git push origin main
+Everything up-to-date
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_1|MERGING)
+$ git checkout branch_1
+A       main_folder/main_txt_1.txt
+A       main_folder/main_txt_2.txt
+A       main_folder/main_txt_3.txt
+Already on 'branch_1'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_1)
+$ git pull origin main
+From https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN
+ * branch            main       -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+  main_folder/main_txt_1.txt main_folder/main_txt_2.txt main_folder/main_txt_3.txt
+Merge with strategy ort failed.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_1)
+$ git push origin branch_1
+Everything up-to-date
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_1)
+$ git checkout branch_2
+A       main_folder/main_txt_1.txt
+A       main_folder/main_txt_2.txt
+A       main_folder/main_txt_3.txt
+Switched to branch 'branch_2'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_2)
+$ git pull origin main
+From https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN
+ * branch            main       -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+  main_folder/main_txt_1.txt main_folder/main_txt_2.txt main_folder/main_txt_3.txt
+Merge with strategy ort failed.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_2)
+$ git push origin branch_2
+Everything up-to-date
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_2)
+$ git checkout branch_3
+A       main_folder/main_txt_1.txt
+A       main_folder/main_txt_2.txt
+A       main_folder/main_txt_3.txt
+Switched to branch 'branch_3'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_3)
+$ git pull origin main
+From https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN
+ * branch            main       -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+  main_folder/main_txt_1.txt main_folder/main_txt_2.txt main_folder/main_txt_3.txt
+Merge with strategy ort failed.
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_3)
+$ git push origin branch_3
+Everything up-to-date
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_3)
+$ git checkout branch_1
+A       main_folder/main_txt_1.txt
+A       main_folder/main_txt_2.txt
+A       main_folder/main_txt_3.txt
+Switched to branch 'branch_1'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ ls
+README.md  main_folder/  text_branch_1.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ notepad text_branch_1.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git status
+On branch branch_5
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   main_folder/main_txt_1.txt
+        new file:   main_folder/main_txt_2.txt
+        new file:   main_folder/main_txt_3.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   text_branch_1.txt
+
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git add text_branch_1.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git commit -m "Chỉnh sửa nội dung file text_branch_1.txt trên branch_5"
+[branch_5 9a9a817] Chỉnh sửa nội dung file text_branch_1.txt trên branch_5
+ 4 files changed, 12 insertions(+), 1 deletion(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git add text_branch_1.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git commit -m "Chỉnh sửa nội dung file text_branch_1.txt trên branch_5"
+On branch branch_5
+nothing to commit, working tree clean
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git push origin branch_5
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 996 bytes | 996.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN/pull/new/branch_5
+remote:
+To https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN.git
+ * [new branch]      branch_5 -> branch_5
+
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git branch -d branch_2
+error: the branch 'branch_2' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_2'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git branch -D branch_2
+Deleted branch branch_2 (was 3c3d2e1).
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git branch -D branch_3
+Deleted branch branch_3 (was b27d162).
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git branch -D branch_4
+error: branch 'branch_4' not found
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git push origin --delete branch_2
+To https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN.git
+ - [deleted]         branch_2
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git push origin --delete branch_3
+To https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN.git
+ - [deleted]         branch_3
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git push origin --delete branch_4
+To https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN.git
+ - [deleted]         branch_4
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git branch -r
+  origin/HEAD -> origin/main
+  origin/branch_1
+  origin/branch_5
+  origin/main
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_5)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_1)
+$ git pull origin main
+remote: Enumerating objects: 21, done.
+remote: Counting objects: 100% (21/21), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 17 (delta 7), reused 4 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (17/17), 5.41 KiB | 158.00 KiB/s, done.
+From https://github.com/NguyenLanAnh-25174600042-DHKL19A4HN/NguyenLanAnh_25174600042_DHKL19A4HN
+ * branch            main       -> FETCH_HEAD
+   0186bdb..9d57d65  main       -> origin/main
+Updating d428968..9d57d65
+Fast-forward
+ main_folder/main_txt_1.txt |  1 +
+ main_folder/main_txt_2.txt |  1 +
+ main_folder/main_txt_3.txt |  1 +
+ text_branch_1.txt          | 10 +++++++++-
+ text_branch_2.txt          |  1 +
+ text_branch_3.txt          |  1 +
+ text_branch_4.txt          |  1 +
+ 7 files changed, 15 insertions(+), 1 deletion(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+nguye@LAPTOP-SN0FTR1J MINGW64 ~/NguyenLanAnh_25174600042_DHKL19A4HN (branch_1)
+$ git push
+fatal: The current branch branch_1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin branch_1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+

@@ -1,0 +1,352 @@
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~
+$ git clone https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+Cloning into '25174600054_Kieu_Bao_Minh_bai_tap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~
+$ cd 25174600054_Kieu_Bao_Minh_bai_tap
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ ls
+README.md
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ notepad README.md
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git add README.md
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git commit -m "Cập nhật nội dung README.md với đoạn Lorem Ipsum"
+[main 65b29f8] Cập nhật nội dung README.md với đoạn Lorem Ipsum
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 729 bytes | 729.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+   e4e2b59..65b29f8  main -> main
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git branch
+* main
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git checkout -b branch_1
+Switched to a new branch 'branch_1'
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ git commit -m "Thêm file text_branch_1.txt vào branch_1"
+[branch_1 2585fff] Thêm file text_branch_1.txt vào branch_1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ git push origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 376 bytes | 376.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_1' on GitHub by visiting:
+remote:      https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap/pull/new/branch_1
+remote:
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+ * [new branch]      branch_1 -> branch_1
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_2)
+$ git add text_branch_2.txt
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_2)
+$ git commit -m "Thêm file text_branch_2.txt vào branch_2"
+[branch_2 23b7406] Thêm file text_branch_2.txt vào branch_2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_2)
+$ git push origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 369 bytes | 369.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap/pull/new/branch_2
+remote:
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+ * [new branch]      branch_2 -> branch_2
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_3)
+$ git add text_branch_3.txt
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_3)
+$ git commit -m "Thêm file text_branch_3.txt vào branch_3"
+[branch_3 37f8ca3] Thêm file text_branch_3.txt vào branch_3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_3)
+$ git push origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 378 bytes | 378.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap/pull/new/branch_3
+remote:
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+ * [new branch]      branch_3 -> branch_3
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+
+From https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ main_folder/main_txt_1.txt | 1 +
+ main_folder/main_txt_2.txt | 1 +
+ main_folder/main_txt_3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_3)
+$
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_3)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_5)
+$ notepad text_branch_1.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_5)
+$ git add text_branch_1.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_5)
+$ git commit -m "Cập nhật nội dung text_branch_1.txt trong branch_5"
+[branch_5 00a4ecf] Cập nhật nội dung text_branch_1.txt trong branch_5
+ 1 file changed, 9 insertions(+)
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_5)
+$ git push origin branch_5
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.05 KiB | 1.05 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap/pull/new/branch_5
+remote:
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+ * [new branch]      branch_5 -> branch_5
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git pull origin main
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 4.77 KiB | 287.00 KiB/s, done.
+From https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap
+ * branch            main       -> FETCH_HEAD
+   013f5eb..8709f24  main       -> origin/main
+Updating 013f5eb..8709f24
+Fast-forward
+ text_branch_1.txt | 10 ++++++++++
+ text_branch_2.txt |  1 +
+ text_branch_3.txt |  1 +
+ text_branch_4.txt |  1 +
+ 4 files changed, 13 insertions(+)
+ create mode 100644 text_branch_1.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ ls
+README.md  main_folder/  text_branch_1.txt  text_branch_2.txt  text_branch_3.txt  text_branch_4.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git branch -D branch_2
+Deleted branch branch_2 (was 2c02031).
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git push origin --delete branch_2
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+ - [deleted]         branch_2
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git branch -D branch_3
+Deleted branch branch_3 (was 8add473).
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git push origin --delete branch_3
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+ - [deleted]         branch_3
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git checkout branch_4
+branch 'branch_4' set up to track 'origin/branch_4'.
+Switched to a new branch 'branch_4'
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git branch -d branch_4
+Deleted branch branch_4 (was cf46847).
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git push origin --delete branch_4
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+ - [deleted]         branch_4
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git fetch --prune
+From https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap
+ - [deleted]         (none)     -> origin/branch_5
+   2585fff..994d2a8  branch_1   -> origin/branch_1
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ git pull origin main
+From https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap
+ * branch            main       -> FETCH_HEAD
+Updating 02cc70a..8709f24
+Fast-forward
+ text_branch_1.txt | 9 +++++++++
+ text_branch_2.txt | 1 +
+ text_branch_3.txt | 1 +
+ text_branch_4.txt | 1 +
+ 4 files changed, 12 insertions(+)
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ git push origin branch_1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+   994d2a8..8709f24  branch_1 -> branch_1
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ echo Kieu_Bao_Minh_doan_ma.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ notepad Kieu_Bao_Minh_doan_ma.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git add Kieu_Bao_Minh_doan_ma.txt
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git commit -m "Thêm file tổng hợp mã từ bài 1 đến bài 9"
+[main 91e3a3f] Thêm file tổng hợp mã từ bài 1 đến bài 9
+ 1 file changed, 332 insertions(+)
+
+TGDD@LAPTOP-5F9GGCMO MINGW64 ~/25174600054_Kieu_Bao_Minh_bai_tap (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kbminh25174600054-afk/25174600054_Kieu_Bao_Minh_bai_tap.git
+   8709f24..9a623ba  main -> main
+
