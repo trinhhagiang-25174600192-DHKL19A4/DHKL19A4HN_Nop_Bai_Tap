@@ -1,0 +1,102 @@
+Bài 1:
+git clone https://github.com/trinhhagiang-25174600192-DHKL19A4/25174600192_Trinh_Ha_Giang__bai_tap.git
+
+Bài 2:
+git add README.md
+git commit -m "Cập nhật nội dung README.md"
+git push origin
+
+Bài 3:
+#1
+git checkout main 
+git checkout -b branch_1
+echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "Thêm text_branch_1.txt"
+git push origin branch_1
+#2
+git checkout main
+git checkout -b branch_2
+echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+git add text_branch_2.txt
+git commit -m "Thêm text_branch_2.txt"
+git push origin branch_2
+#3
+git checkout main
+git checkout -b branch_3
+echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+git add text_branch_3.txt
+git commit -m "Thêm text_branch_3.txt"
+git push origin branch_3
+#4
+git checkout main
+git checkout -b branch_4
+echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+git add text_branch_4.txt
+git commit -m "Thêm text_branch_4.txt"
+git push origin branch_4
+
+Bài 4:
+git branch --delete branch_4
+git branch --list
+
+Bài 5:
+git pull origin main
+
+Bài 6:
+git checkout main
+mkdir main_folder
+echo "main_txt_1" > main_folder/main_txt_1.txt
+echo "main_txt_2" > main_folder/main_txt_2.txt
+echo "main_txt_3" > main_folder/main_txt_3.txt
+git add main_folder
+git commit -m "Thêm thư mục main_folder"
+git push origin main
+# Cập nhật các nhánh khác
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+
+git checkout branch_2
+git pull origin main
+git push origin branch_2
+
+git checkout branch_3
+git pull origin main
+git push origin branch_3
+
+Bài 7
+git checkout branch_1
+git checkout -b branch_5
+echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non  metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie  accumsan sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam  malesuada v el dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor  tristique turpis. Nam ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti  sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque vitae  egestas lacus. Phasellus turpis ante, euismod quis pellentesque et, pharetra id ligula.  Vestibulum mattis sem ac ligula auctor viverra. Phasellus dignissim mollis leo, vitae  tristique enim." > text_branch_1.txt
+git add text_branch_1.txt
+git commit -m "thêm text_branch_1.txt trong branch_5"
+git push origin branch_5
+
+#
+Vào GitHub → chọn nhánh branch_5 → nhánh đích: main
+- Nhấn “Compare & pull request”
+ ấn Create pull request
+
+Bài 8
+-Vào GitHub → chọn nhánh branch_1 → nhánh đích: main
+-Nhấn “Compare & pull request”
+ ấn Create pull request 
+Tương Tự các nhánh khác
+
+Bài 9:
+
+git branch --delete branch_2
+git branch --delete branch_3
+git branch --delete branch_4
+
+git push origin --delete branch_2
+git push origin --delete branch_3
+git push origin --delete branch_4
+
+git checkout branch_1
+git pull origin main
+git push origin branch_1
+
+
+
